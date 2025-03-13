@@ -1,4 +1,4 @@
-export default class Converter {
+class Converter {
     constructor() {
       this.conversions = {
         // Length
