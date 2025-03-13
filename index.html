@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pure CSS3 Tabs</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Unit Converter</title>
+    </head>
+    <body>
+
+        <div class="page">
+            <h1>
+                <a href="#"><img id="logo" src="logo.png"
+                        alt="logo" />
+                    <span>Unit Converter</a></span>
+            </h1>
+
+            <!-- tabs -->
+            <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
+                <input type="radio" name="pcss3t" checked id="tab1"
+                    class="tab-content-first">
+                <label for="tab1"><span
+                        class="material-symbols-outlined">square_foot</span>Length</label>
+
+                <input type="radio" name="pcss3t" id="tab2"
+                    class="tab-content-2">
+                <label for="tab2"><span class="material-symbols-outlined">
+                        device_thermostat
+                    </span>Temperature</label>
+
+                <input type="radio" name="pcss3t" id="tab3"
+                    class="tab-content-3">
+                <label for="tab3"><span class="material-symbols-outlined">
+                        area_chart
+                    </span>Area</label>
+
+                <input type="radio" name="pcss3t" id="tab5"
+                    class="tab-content-5">
+                <label for="tab5"><span class="material-symbols-outlined">
+                        local_drink
+                    </span>Volume</label>
+
+                <input type="radio" name="pcss3t" id="tab6"
+                    class="tab-content-6">
+                <label for="tab6"><span class="material-symbols-outlined">
+                        weight
+                    </span>Weight</label>
+
+                <input type="radio" name="pcss3t" id="tab7"
+                    class="tab-content-last">
+                <label for="tab7"><span class="material-symbols-outlined">
+                        schedule
+                    </span>Time</label>
+
+                <ul>
+                    <li class="tab-content tab-content-first typography">
+                        <div class="section" id="length-conversion">
+                            <h2><span
+                                    class="material-symbols-outlined">square_foot</span>
+                                Length Conversion</h2>
+                            <div class="dropdown-container">
+                                <div>
+                                    <label for="fromLengthValue">From:</label>
+                                    <input type="number" id="fromLengthValue"
+                                        value="1">
+                                    <select id="fromLengthUnit" size="11">
+                                        <option value="meter"
+                                            selected>Meter</option>
+                                        <option
+                                            value="kilometer">Kilometer</option>
+                                        <option
+                                            value="centimeter">Centimeter</option>
+                                        <option
+                                            value="millimeter">Millimeter</option>
+                                        <option
+                                            value="micrometer">Micrometer</option>
+                                        <option
+                                            value="nanometer">Nanometer</option>
+                                        <option value="mile">Mile</option>
+                                        <option value="yard">Yard</option>
+                                        <option value="foot">Foot</option>
+                                        <option value="inch">Inch</option>
+                                        <option value="lightYear">Light
+                                            Year</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="toLengthValue">To:</label>
+                                    <input type="text" id="toLengthValue"
+                                        readonly>
+                                    <select id="toLengthUnit" size="11">
+                                        <option value="meter"
+                                            selected>Meter</option>
+                                        <option
+                                            value="kilometer">Kilometer</option>
+                                        <option
+                                            value="centimeter">Centimeter</option>
+                                        <option
+                                            value="millimeter">Millimeter</option>
+                                        <option
+                                            value="micrometer">Micrometer</option>
+                                        <option
+                                            value="nanometer">Nanometer</option>
+                                        <option value="mile">Mile</option>
+                                        <option value="yard">Yard</option>
+                                        <option value="foot">Foot</option>
+                                        <option value="inch">Inch</option>
+                                        <option value="lightYear">Light
+                                            Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="tab-content tab-content-2 typography">
+                        <div class="section" id="temperature-conversion">
+                            <h2><span class="material-symbols-outlined">
+                                    device_thermostat
+                                </span> Temperature Conversion</h2>
+                            <div class="dropdown-container">
+                                <div>
+                                    <label for="fromTempValue">From:</label>
+                                    <input type="number" id="fromTempValue"
+                                        value="1">
+                                    <select id="fromTempUnit" size="11">
+                                        <option value="celsius"
+                                            selected>Celsius</option>
+                                        <option value="kelvin">Kelvin</option>
+                                        <option
+                                            value="fahrenheit">Fahrenheit</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="toTempValue">To:</label>
+                                    <input type="text" id="toTempValue"
+                                        readonly>
+                                    <select id="toTempUnit" size="11">
+                                        <option value="celsius"
+                                            selected>Celsius</option>
+                                        <option value="kelvin">Kelvin</option>
+                                        <option
+                                            value="fahrenheit">Fahrenheit</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="tab-content tab-content-3 typography">
+                        <div class="section" id="area-conversion">
+                            <h2><span class="material-symbols-outlined">
+                                    area_chart
+                                </span> Area Conversion</h2>
+                            <div class="dropdown-container">
+                                <div>
+                                    <label for="fromAreaValue">From:</label>
+                                    <input type="number" id="fromAreaValue"
+                                        value="1">
+                                    <select id="fromAreaUnit" size="11">
+                                        <option value="squareMeter"
+                                            selected>Square Meter</option>
+                                        <option value="squareKilometer">Square
+                                            Kilometer</option>
+                                        <option value="squareCentimeter">Square
+                                            Centimeter</option>
+                                        <option value="squareMillimeter">Square
+                                            Millimeter</option>
+                                        <option value="squareMicrometer">Square
+                                            Micrometer</option>
+                                        <option value="hectare">Hectare</option>
+                                        <option value="squareMile">Square
+                                            Mile</option>
+                                        <option value="squareYard">Square
+                                            Yard</option>
+                                        <option value="squareFoot">Square
+                                            Foot</option>
+                                        <option value="squareInch">Square
+                                            Inch</option>
+                                        <option value="acre">Acre</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="toAreaValue">To:</label>
+                                    <input type="text" id="toAreaValue"
+                                        readonly>
+                                    <select id="toAreaUnit" size="11">
+                                        <option value="squareMeter"
+                                            selected>Square Meter</option>
+                                        <option value="squareKilometer">Square
+                                            Kilometer</option>
+                                        <option value="squareCentimeter">Square
+                                            Centimeter</option>
+                                        <option value="squareMillimeter">Square
+                                            Millimeter</option>
+                                        <option value="squareMicrometer">Square
+                                            Micrometer</option>
+                                        <option value="hectare">Hectare</option>
+                                        <option value="squareMile">Square
+                                            Mile</option>
+                                        <option value="squareYard">Square
+                                            Yard</option>
+                                        <option value="squareFoot">Square
+                                            Foot</option>
+                                        <option value="squareInch">Square
+                                            Inch</option>
+                                        <option value="acre">Acre</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="tab-content tab-content-5 typography">
+                        <div class="section" id="unit-conversion">
+                            <h2><span class="material-symbols-outlined">
+                                    local_drink
+                                </span> Volume Conversion</h2>
+                            <div class="dropdown-container">
+                                <div>
+                                    <label for="fromUnitValue">From:</label>
+                                    <input type="number" id="fromUnitValue"
+                                        value="1">
+                                    <select id="fromUnit" size="11">
+                                        <option value="cubicMeter"
+                                            selected>Cubic Meter</option>
+                                        <option value="cubicKilometer">Cubic
+                                            Kilometer</option>
+                                        <option value="cubicCentimeter">Cubic
+                                            Centimeter</option>
+                                        <option value="cubicMillimeter">Cubic
+                                            Millimeter</option>
+                                        <option value="Liter">Liter</option>
+                                        <option
+                                            value="Milliliter">Milliliter</option>
+                                        <option value="usGallon">US
+                                            Gallon</option>
+                                        <option value="usQuart">US
+                                            Quart</option>
+                                        <option value="usPint">US Pint</option>
+                                        <option value="usCup">US Cup</option>
+                                        <option value="usFluidOunce">US Fluid
+                                            Ounce</option>
+                                        <option value="usTableSpoon">US
+                                            Tablespoon</option>
+                                        <option value="usTeaSpoon">US
+                                            Teaspoon</option>
+                                        <option value="imperialGallon">Imperial
+                                            Gallon</option>
+                                        <option value="imperialQuart">Imperial
+                                            Quart</option>
+                                        <option value="imperialPint">Imperial
+                                            Pint</option>
+                                        <option
+                                            value="imperialFluidOunce">Imperial
+                                            Fluid Ounce</option>
+                                        <option
+                                            value="imperialTableSpoon">Imperial
+                                            Tablespoon</option>
+                                        <option
+                                            value="imperialTeaSpoon">Imperial
+                                            Teaspoon</option>
+                                        <option value="cubicMile">Cubic
+                                            Mile</option>
+                                        <option value="cubicYard">Cubic
+                                            Yard</option>
+                                        <option value="cubicFoot">Cubic
+                                            Foot</option>
+                                        <option value="cubicInch">Cubic
+                                            Inch</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="toUnitValue">To:</label>
+                                    <input type="text" id="toUnitValue"
+                                        readonly>
+                                    <select id="toUnit" size="11">
+                                        <option value="cubicMeter"
+                                            selected>Cubic Meter</option>
+                                        <option value="cubicKilometer">Cubic
+                                            Kilometer</option>
+                                        <option value="cubicCentimeter">Cubic
+                                            Centimeter</option>
+                                        <option value="cubicMillimeter">Cubic
+                                            Millimeter</option>
+                                        <option value="Liter">Liter</option>
+                                        <option
+                                            value="Milliliter">Milliliter</option>
+                                        <option value="usGallon">US
+                                            Gallon</option>
+                                        <option value="usQuart">US
+                                            Quart</option>
+                                        <option value="usPint">US Pint</option>
+                                        <option value="usCup">US Cup</option>
+                                        <option value="usFluidOunce">US Fluid
+                                            Ounce</option>
+                                        <option value="usTableSpoon">US
+                                            Tablespoon</option>
+                                        <option value="usTeaSpoon">US
+                                            Teaspoon</option>
+                                        <option value="imperialGallon">Imperial
+                                            Gallon</option>
+                                        <option value="imperialQuart">Imperial
+                                            Quart</option>
+                                        <option value="imperialPint">Imperial
+                                            Pint</option>
+                                        <option
+                                            value="imperialFluidOunce">Imperial
+                                            Fluid Ounce</option>
+                                        <option
+                                            value="imperialTableSpoon">Imperial
+                                            Tablespoon</option>
+                                        <option
+                                            value="imperialTeaSpoon">Imperial
+                                            Teaspoon</option>
+                                        <option value="cubicMile">Cubic
+                                            Mile</option>
+                                        <option value="cubicYard">Cubic
+                                            Yard</option>
+                                        <option value="cubicFoot">Cubic
+                                            Foot</option>
+                                        <option value="cubicInch">Cubic
+                                            Inch</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="tab-content tab-content-6 typography">
+                        <div class="section" id="weight-conversion">
+                            <h2><span class="material-symbols-outlined">
+                                    weight
+                                </span> Weight Conversion</h2>
+                            <div class="dropdown-container">
+                                <div>
+                                    <label for="fromWeightValue">From:</label>
+                                    <input type="number" id="fromWeightValue"
+                                        value="1">
+                                    <select id="fromWeightUnit" size="11">
+                                        <option value="kilogram"
+                                            selected>Kilogram</option>
+                                        <option value="gram">Gram</option>
+                                        <option
+                                            value="milligram">Milligram</option>
+                                        <option value="metricTon">Metric
+                                            Ton</option>
+                                        <option value="longTon">Long
+                                            Ton</option>
+                                        <option value="shortTon">Short
+                                            Ton</option>
+                                        <option value="pound">Pound</option>
+                                        <option value="ounce">Ounce</option>
+                                        <option value="carrat">Carrat</option>
+                                        <option value="atomicMassUnit">Atomic
+                                            Mass Unit</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="toWeightValue">To:</label>
+                                    <input type="text" id="toWeightValue"
+                                        readonly>
+                                    <select id="toWeightUnit" size="11">
+                                        <option value="kilogram"
+                                            selected>Kilogram</option>
+                                        <option value="gram">Gram</option>
+                                        <option
+                                            value="milligram">Milligram</option>
+                                        <option value="metricTon">Metric
+                                            Ton</option>
+                                        <option value="longTon">Long
+                                            Ton</option>
+                                        <option value="shortTon">Short
+                                            Ton</option>
+                                        <option value="pound">Pound</option>
+                                        <option value="ounce">Ounce</option>
+                                        <option value="carrat">Carrat</option>
+                                        <option value="atomicMassUnit">Atomic
+                                            Mass Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-content tab-content-last typography">
+                        <div class="section" id="time-conversion">
+                            <h2><span class="material-symbols-outlined">
+                                    schedule
+                                </span> Time Conversion</h2>
+                            <div class="dropdown-container">
+                                <div>
+                                    <label for="fromTimeValue">From:</label>
+                                    <input type="number" id="fromTimeValue"
+                                        value="1">
+                                    <select id="fromTimeUnit" size="11">
+                                        <option value="second"
+                                            selected>Second</option>
+                                        <option
+                                            value="millisecond">Millisecond</option>
+                                        <option
+                                            value="microsecond">Microsecond</option>
+                                        <option
+                                            value="nanosecond">Nanosecond</option>
+                                        <option
+                                            value="picosecond">Picosecond</option>
+                                        <option value="minute">Minute</option>
+                                        <option value="hour">Hour</option>
+                                        <option value="day">Day</option>
+                                        <option value="week">Week</option>
+                                        <option value="month">Month</option>
+                                        <option value="year">Year</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="toTimeValue">To:</label>
+                                    <input type="text" id="toTimeValue"
+                                        readonly>
+                                    <select id="toTimeUnit" size="11">
+                                        <option value="second"
+                                            selected>Second</option>
+                                        <option
+                                            value="millisecond">Millisecond</option>
+                                        <option
+                                            value="microsecond">Microsecond</option>
+                                        <option
+                                            value="nanosecond">Nanosecond</option>
+                                        <option
+                                            value="picosecond">Picosecond</option>
+                                        <option value="minute">Minute</option>
+                                        <option value="hour">Hour</option>
+                                        <option value="day">Day</option>
+                                        <option value="week">Week</option>
+                                        <option value="month">Month</option>
+                                        <option value="year">Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--/ tabs -->
+            <footer>
+                <span>Achraf EL ISMAILI - &copy; All Right are NOT
+                    reserved!</span>
+            </footer>
+        </div>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
