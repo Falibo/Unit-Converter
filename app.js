@@ -1,5 +1,3 @@
-
-import { Converter } from './converter.js';
 // Instantiate the UnitConverter class
 const unitConverter = new Converter();
 
